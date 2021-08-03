@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Saver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav id="navbar">
+
+        <div class="container" id="nav-panel">
+            <h1 class="nav-header">Link Saver</h1>
+            <a id="addBtn">+</a>
+        </div>
+
+    </nav>
+    
+    <div class="container">
+
+        <div id="addLinkContainer" class="full-screen-opaque hidden">
+            
+            <div class="panel" id="addLinkPanel">
+                <h3 class="header">Add Link</h3>
+                <form id="addLinkForm">
+                    <input type="text" name="title" id="linkTitle" class="form-control" placeholder="Title">
+                    <input type="text" name="url" id="linkUrl" class="form-control" placeholder="URL">
+                    <input type="text" name="catagory" id="linkCatagory" class="form-control" placeholder="Comma seperated">
+    
+                    <div id="addedCatagories">
+                        <!-- <span class="catagories">Cat1</span> -->
+                    </div>
+    
+                    <input type="submit" id="submitButton" value="Submit">
+                    <input type="submit" id="cancelButton" value="Cancel">
+                </form>
+            </div>
+
+        </div>        
+
+        <div id="linkList">
+
+            <!-- <div class="flex-item">
+
+                <div class="link panel">
+                    <div class="link-option">
+                        <button class="sm-btn" onclick="deleteLink(${index})">Delete</button>
+                        <button class="sm-btn" onclick="editLink(${index})">Edit</button>
+                    </div>
+        
+                    <a href="${link.url}" target="_blank"><h1 class="header">Title</h1></a>
+                    <p class="link-date">date</p>
+                    <div class="catagory">
+                        Catagories:
+                        <span class="catagories">${catagory}</span>
+                    </div>
+                </div> 
+
+            </div> -->
+            
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
